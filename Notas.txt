@@ -1,0 +1,3 @@
+Notas:
+O arquivo ConcessionariaInitializer especificará que o banco de dados deve ser descartado e recriado sempre que os modelos (os Models) forem alterado.
+O Entity Framework chama o método seed automaticamente depois de criar o banco de dados para preenchê-lo com dados de teste.

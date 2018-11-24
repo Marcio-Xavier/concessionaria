@@ -1,0 +1,58 @@
+﻿@model Concessionaria.Models.Cliente
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h3>Detalhes de @Html.DisplayFor(model => model.Nome)</h3>
+
+<div>
+    <hr />
+    <p>Informações</p>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cpf)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cpf)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nascimento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nascimento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telefone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Endereco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Endereco)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    <button type="button" class="btn btn-default">@Html.ActionLink("< Votar", "Index")</button>
+    <button type="button" class="btn btn-warning">@Html.ActionLink("Editar", "Edit", new { id = Model.ID })</button>
+</p>
