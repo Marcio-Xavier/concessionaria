@@ -4,80 +4,79 @@
 
     ViewBag.Title = "Index";
 }
-
-<h3>Lista de Veículos</h3>
-
-<p>
-    <button type="button" class="btn btn-default">@Html.ActionLink("Adicionar Veículo", "Create")</button>
-</p>
-<table class="table table-striped">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Nome)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Marca)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Ano)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Placa)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Cor)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Combustivel)
-        </th>
-        <th>
-
-        </th>
-        <th>
-
-        </th>
-        <th>
-
-        </th>
-    </tr>
-
-    @foreach (var item in Model)
-    {
+<div class="container body-content">
+    <h3>Lista de Veículos</h3>
+    <hr />
+    <p>
+        @Html.ActionLink("Adicionar Veículo", "Create")
+        <i class="fa fa-plus" aria-hidden="true"></i>
+    </p>
+    <table class="table table-striped">
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Marca)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Ano)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Placa)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cor)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Combustivel)
-            </td>
-            <td>
-                <button type="button" class="btn btn-default btn-sm">
-                    <span class="glyphicon glyphicon-edit"></span> @Html.ActionLink("Editar", "Edit", new { id = item.ID })
-                </button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-default btn-sm">
-                    <span class="glyphicon glyphicon-align-justify"></span> @Html.ActionLink("Detalhes", "Details", new { id = item.ID })
-                </button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-default btn-sm">
-                    <span class="glyphicon glyphicon-remove"></span> @Html.ActionLink("Remover", "Delete", new { id = item.ID })
-                </button>
-            </td>
-        </tr>
-    }
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Marca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ano)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Placa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Combustivel)
+            </th>
+            <th>
 
-</table>
+            </th>
+            <th>
+
+            </th>
+            <th>
+
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Marca)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ano)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Placa)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Combustivel)
+                </td>
+                <td>
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    @Html.ActionLink("Editar", "Edit", new { id = item.ID })
+                </td>
+                <td>
+                    <i class="fa fa-info" aria-hidden="true"></i>
+                    @Html.ActionLink("Detalhes", "Details", new { id = item.ID })
+                </td>
+                <td>
+                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                    @Html.ActionLink("Remover", "Delete", new { id = item.ID })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>

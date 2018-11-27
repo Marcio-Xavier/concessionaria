@@ -9,7 +9,14 @@ namespace Concessionaria
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+                        "~/Scripts/jquery-{version}.js",
+                        "~/Scripts/jquery.min.js",
+                        "~/Scripts/jquery-{version}.slim.min.js",
+                        "~/Script/bootstrap.min.js",
+                        "~/Scripts/popper.min.js"));
+
+            bundles.Add(new ScriptBundle("~/Scripts/MyScript").Include(
+                        "~/Scripts/MyScript/script.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
@@ -24,7 +31,9 @@ namespace Concessionaria
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/font-awesome.css",
+                      "~/Content/site.css",
+                      "~/Content/MyStyle/style.css"));
         }
     }
 }

@@ -1,56 +1,46 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Meu Aplicativo ASP.NET</title>
+    <title>@ViewBag.Title - Matias</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/Scripts/MyScript")
+
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Loja Matias", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Início", "Index", "Home")</li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown">
-                            Veículos
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a>@Html.ActionLink("Listar", "Index", "Veiculo")</a></li>
-                            <li><a>@Html.ActionLink("Inseir", "Create", "Veiculo")</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown">
-                            Clientes
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a>@Html.ActionLink("Listar", "Index", "Cliente")</a></li>
-                            <li><a>@Html.ActionLink("Inseir", "Create", "Cliente")</a></li>
-                        </ul>
-                    </li>
-                    <li>@Html.ActionLink("Sobre", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contato", "Contact", "Home")</li>
-                </ul>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a>@Html.ActionLink("Início", "Index", "Home")</a>
+        <a>@Html.ActionLink("Veículos", "Index", "Veiculo")</a>
+        <a>@Html.ActionLink("Clientes", "Index", "Cliente")</a>
+        <a>@Html.ActionLink("Sobre", "About", "Home")</a>
+        <a>@Html.ActionLink("Contato", "Contact", "Home")</a>
+        <a>Login</a>
+    </div>
+    <div class="container mh-100">
+        <div class="row">
+            <div class="col-lg-12">
+                <img src="~/Content/Images/main.png" alt="test" class="img-fluid">
+                <div class="carousel-caption">
+                    <h4 class="display-4 text-center text-capitalize mt-2">Seu Veículo. Seu Melhor Negócio.</h4>
+                </div>
             </div>
         </div>
     </div>
+    <div class="container">
+        <h2>
+            <i onclick="openNav()" style="cursor:pointer;" class="fa fa-bars" aria-hidden="true"></i>
+        </h2>
+    </div>
+
+    @RenderBody()
+    <hr />
     <div class="container body-content">
-        @RenderBody()
-        <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - Concessionária Matias</p>
         </footer>

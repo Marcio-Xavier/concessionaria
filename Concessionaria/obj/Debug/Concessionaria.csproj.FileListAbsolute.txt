@@ -187,3 +187,4 @@ F:\Development\Projects\ASP.NET\Concessionaria\Concessionaria\obj\Debug\Concessi
 F:\Development\Projects\ASP.NET\Concessionaria\Concessionaria\obj\Debug\Concessionaria.csproj.CopyComplete
 F:\Development\Projects\ASP.NET\Concessionaria\Concessionaria\obj\Debug\Concessionaria.dll
 F:\Development\Projects\ASP.NET\Concessionaria\Concessionaria\obj\Debug\Concessionaria.pdb
+F:\Development\Projects\ASP.NET\Concessionaria\Concessionaria\obj\Debug\Concessionaria.csprojAssemblyReference.cache

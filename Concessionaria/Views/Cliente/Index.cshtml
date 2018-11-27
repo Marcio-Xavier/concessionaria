@@ -3,70 +3,74 @@
 @{
     /**/
 
+    /**/
+
     ViewBag.Title = "Index";
 }
-
-<h3>Lista de Clientes</h3>
-
-<p>
-    <button type="button" class="btn btn-default">@Html.ActionLink("Adicionar Cliente", "Create")</button>
-</p>
-<table class="table table-striped">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Nome)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Cpf)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Nascimento)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Telefone)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Endereco)
-        </th>
-        <th></th>
-        <th></th>
-        <th></th>
-    </tr>
-
-    @foreach (var item in Model)
-    {
+@Styles.Render("~/Content/css")
+<div class="container body-content">
+    <h3>Lista de Clientes</h3>
+    <hr />
+    <p>
+        @Html.ActionLink("Adicionar Cliente", "Create")
+        <i class="fa fa-plus" aria-hidden="true"></i>
+    </p>
+    <table class="table table-striped">
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cpf)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nascimento)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Telefone)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Endereco)
-            </td>
-            <td>
-                <button type="button" class="btn btn-default btn-sm">
-                    <span class="glyphicon glyphicon-edit"></span> @Html.ActionLink("Editar", "Edit", new { id = item.ID })
-                </button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-default btn-sm">
-                    <span class="glyphicon glyphicon-align-justify"></span> @Html.ActionLink("Detalhes", "Details", new { id = item.ID })
-                </button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-default btn-sm">
-                    <span class="glyphicon glyphicon-remove"></span> @Html.ActionLink("Remover", "Delete", new { id = item.ID })
-                </button>
-            </td>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cpf)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nascimento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Endereco)
+            </th>
+            <th></th>
+            <th></th>
+            <th></th>
         </tr>
-    }
 
-</table>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cpf)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nascimento)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Telefone)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Endereco)
+                </td>
+                <td>
+
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    @Html.ActionLink("Editar", "Edit", new { id = item.ID })
+
+                </td>
+                <td>
+                    <i class="fa fa-info" aria-hidden="true"></i>
+                    @Html.ActionLink("Detalhes", "Details", new { id = item.ID })
+                </td>
+                <td>
+                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                    @Html.ActionLink("Remover", "Delete", new { id = item.ID })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>
