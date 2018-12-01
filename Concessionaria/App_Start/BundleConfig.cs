@@ -30,9 +30,9 @@ namespace Concessionaria
                       "~/Scripts/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
+                      "~/Content/bootstrap-darkly.css",
                       "~/Content/font-awesome.css",
-                      "~/Content/site.css",
+                      "~/Content/Site.css",
                       "~/Content/MyStyle/style.css"));
         }
     }

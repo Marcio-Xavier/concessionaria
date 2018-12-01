@@ -168,6 +168,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-darkly.css" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
@@ -178,11 +179,15 @@
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\Images\automotive.png" />
     <Content Include="Content\Images\logo.png" />
-    <Content Include="Content\Images\main.png" />
+    <Content Include="Content\Images\main1.png" />
     <Content Include="Content\Images\Site\cb300_1.png" />
     <Content Include="Content\Images\Site\cb300_2.png" />
+    <Content Include="Content\Images\Site\Logos\facebook-logo.png" />
+    <Content Include="Content\Images\Site\Logos\instagram-logo.png" />
+    <Content Include="Content\Images\Site\Logos\twitter-logo.png" />
     <Content Include="Content\Images\Site\urus_1.jpg" />
     <Content Include="Content\Images\Site\virtus_1.jpg" />
+    <Content Include="Content\Images\Site\Logos\youtube-logo.png" />
     <Content Include="Content\MyStyle\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
