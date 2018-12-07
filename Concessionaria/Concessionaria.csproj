@@ -57,12 +57,21 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
@@ -155,8 +164,11 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NoticiaController.cs" />
+    <Compile Include="Controllers\SobreController.cs" />
     <Compile Include="Controllers\VeiculoController.cs" />
     <Compile Include="DAL\ConcessionariaInitializer.cs" />
     <Compile Include="Global.asax.cs">
@@ -164,6 +176,8 @@
     </Compile>
     <Compile Include="DAL\ConcessionariaContext.cs" />
     <Compile Include="Models\Cliente.cs" />
+    <Compile Include="Models\Noticia.cs" />
+    <Compile Include="Models\Sobre.cs" />
     <Compile Include="Models\Veiculo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -182,6 +196,8 @@
     <Content Include="Content\Images\main1.png" />
     <Content Include="Content\Images\Site\cb300_1.png" />
     <Content Include="Content\Images\Site\cb300_2.png" />
+    <Content Include="Content\Images\Site\home1.jpg" />
+    <Content Include="Content\Images\Site\home2.jpg" />
     <Content Include="Content\Images\Site\Logos\facebook-logo.png" />
     <Content Include="Content\Images\Site\Logos\instagram-logo.png" />
     <Content Include="Content\Images\Site\Logos\twitter-logo.png" />
@@ -282,6 +298,18 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Noticia\Create.cshtml" />
+    <Content Include="Views\Noticia\Delete.cshtml" />
+    <Content Include="Views\Noticia\Details.cshtml" />
+    <Content Include="Views\Noticia\Edit.cshtml" />
+    <Content Include="Views\Noticia\Index.cshtml" />
+    <Content Include="Views\Noticia\Resumo.cshtml" />
+    <Content Include="Views\Sobre\Create.cshtml" />
+    <Content Include="Views\Sobre\Delete.cshtml" />
+    <Content Include="Views\Sobre\Details.cshtml" />
+    <Content Include="Views\Sobre\Edit.cshtml" />
+    <Content Include="Views\Sobre\Index.cshtml" />
+    <Content Include="Views\Sobre\Resumo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -8,6 +8,7 @@ namespace Concessionaria.Models
 {
     public class Veiculo
     {
+        [Key]
         public int ID { get; set; }
         public string Nome { get; set; }
         public string Marca { get; set; }

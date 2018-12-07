@@ -9,7 +9,7 @@ namespace Concessionaria.DAL
 {
     public class ConcessionariaInitializer : System.Data.Entity.DropCreateDatabaseIfModelChanges<ConcessionariaContext>
     {
-        protected override void Seed(ConcessionariaContext context)
+        /*protected override void Seed(ConcessionariaContext context)
         {
             var clientes = new List<Cliente>
             {
@@ -29,6 +29,13 @@ namespace Concessionaria.DAL
             };
             veiculos.ForEach(s => context.veiculos.Add(s));
             context.SaveChanges();
-        }
+
+            var noticias = new List<Noticia>
+            {
+                new Noticia{Titulo="Titulo da Notícia",Subitulo="Subtítulo da Notícia",Autor="Autor da Notícia", DataDePublicacao="Data de Publicação da Notícia", Corpo="Corpo da Notícia"}
+            };
+            veiculos.ForEach(s => context.veiculos.Add(s));
+            context.SaveChanges();
+        }*/
     }
 }

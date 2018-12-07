@@ -183,8 +183,14 @@ F:\Development\Projects\ASP.NET\Concessionaria\Concessionaria\bin\Microsoft.AI.D
 F:\Development\Projects\ASP.NET\Concessionaria\Concessionaria\bin\Microsoft.AI.WindowsServer.xml
 F:\Development\Projects\ASP.NET\Concessionaria\Concessionaria\bin\Microsoft.AI.Web.xml
 F:\Development\Projects\ASP.NET\Concessionaria\Concessionaria\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-F:\Development\Projects\ASP.NET\Concessionaria\Concessionaria\obj\Debug\Concessionaria.csprojAssemblyReference.cache
 F:\Development\Projects\ASP.NET\Concessionaria\Concessionaria\obj\Debug\Concessionaria.csproj.CoreCompileInputs.cache
 F:\Development\Projects\ASP.NET\Concessionaria\Concessionaria\obj\Debug\Concessionaria.csproj.CopyComplete
 F:\Development\Projects\ASP.NET\Concessionaria\Concessionaria\obj\Debug\Concessionaria.dll
 F:\Development\Projects\ASP.NET\Concessionaria\Concessionaria\obj\Debug\Concessionaria.pdb
+F:\Development\Projects\ASP.NET\concessionaria\Concessionaria\obj\Debug\Concessionaria.csprojAssemblyReference.cache
+F:\Development\Projects\ASP.NET\concessionaria\Concessionaria\bin\System.Net.Http.Formatting.dll
+F:\Development\Projects\ASP.NET\concessionaria\Concessionaria\bin\System.Web.Http.dll
+F:\Development\Projects\ASP.NET\concessionaria\Concessionaria\bin\System.Web.Http.WebHost.dll
+F:\Development\Projects\ASP.NET\concessionaria\Concessionaria\bin\System.Net.Http.Formatting.xml
+F:\Development\Projects\ASP.NET\concessionaria\Concessionaria\bin\System.Web.Http.xml
+F:\Development\Projects\ASP.NET\concessionaria\Concessionaria\bin\System.Web.Http.WebHost.xml

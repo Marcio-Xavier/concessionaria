@@ -1,34 +1,25 @@
-﻿@model IEnumerable<Concessionaria.Models.Veiculo>
+﻿@model IEnumerable<Concessionaria.Models.Noticia>
 
 @{
-    ViewBag.Title = "Veículos";
+    ViewBag.Title = "Notícias";
 }
 <div class="container body-content">
-    <h3>Lista de Veículos</h3>
+    <h3>Lista de Notícias</h3>
     <hr />
     <p>
-        @Html.ActionLink("Adicionar Veículo", "Create")
+        @Html.ActionLink("Adicionar Notícia", "Create")
         <i class="fa fa-plus" aria-hidden="true"></i>
     </p>
     <table class="table table-striped">
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Nome)
+                @Html.DisplayNameFor(model => model.DataDePublicacao)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Marca)
+                @Html.DisplayNameFor(model => model.Titulo)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Ano)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Placa)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Cor)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Combustivel)
+                @Html.DisplayNameFor(model => model.Autor)
             </th>
             <th></th>
             <th></th>
@@ -39,23 +30,15 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Nome)
+                    @Html.DisplayFor(modelItem => item.DataDePublicacao)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Marca)
+                    @Html.DisplayFor(modelItem => item.Titulo)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Ano)
+                    @Html.DisplayFor(modelItem => item.Autor)
                 </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Placa)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Cor)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Combustivel)
-                </td>
+
                 <td>
                     <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                     @Html.ActionLink("Editar", "Edit", new { id = item.ID })

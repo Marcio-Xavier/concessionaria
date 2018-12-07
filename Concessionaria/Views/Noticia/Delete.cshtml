@@ -1,0 +1,64 @@
+﻿@model Concessionaria.Models.Noticia
+
+@{
+    ViewBag.Title = "Remover Notícia";
+}
+
+
+<div class="container body-content">
+    <h3>Remover <b>@Html.DisplayFor(model => model.Titulo)</b>? </h3>
+    <hr />
+    <div>
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Titulo)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Titulo)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Subitulo)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Subitulo)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Corpo)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Corpo)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Autor)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Autor)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.DataDePublicacao)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.DataDePublicacao)
+            </dd>
+
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-danger" /><br />
+                @Html.ActionLink("< Voltar", "Index")
+            </div>
+        }
+    </div>
+</div>

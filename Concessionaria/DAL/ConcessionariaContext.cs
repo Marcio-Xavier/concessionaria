@@ -12,8 +12,9 @@ namespace Concessionaria.DAL
     {
         public ConcessionariaContext() : base("ConcessionariaContext") { }
 
-        public DbSet<Veiculo> veiculos{ get; set; }
+        public DbSet<Veiculo> veiculos { get; set; }
         public DbSet<Cliente> clientes { get; set; }
-
+        public DbSet<Noticia> noticias { get; set; }
+        public DbSet<Sobre> sobre { get; set; }
     }
 }

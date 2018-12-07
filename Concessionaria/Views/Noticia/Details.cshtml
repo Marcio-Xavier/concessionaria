@@ -1,0 +1,58 @@
+﻿@model Concessionaria.Models.Noticia
+
+@{
+    ViewBag.Title = "Detalhes da Notícia";
+}
+<div class="container body-content">
+    <h3>Detalhes de @Html.DisplayFor(model => model.Titulo)</h3>
+    <hr />
+    <div>
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Titulo)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Titulo)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Subitulo)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Subitulo)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Corpo)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Corpo)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Autor)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Autor)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.DataDePublicacao)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.DataDePublicacao)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+        @Html.ActionLink("Editar", "Edit", new { id = Model.ID })<br />
+        @Html.ActionLink("< Voltar", "Index")
+    </p>
+</div>
